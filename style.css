@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Karla:wght@800&family=Lato:wght@900&family=Montserrat:wght@600&family=Roboto:wght@900&family=Rubik:wght@700&display=swap');
+
+*{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    width: 98vw;
+    height: 98vh;
+    background: #159957;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7*/
+    text-align: center;
+}
+
+.container{
+    display: block;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: top;
+    width: 350px;
+    margin: 2rem auto;
+    border-color: azure;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0.8rem 1.3rem 13rem 0.5rem;
+}
+div.container form{
+    margin: 1.5rem;
+    margin-block-end: 2em;
+}
+
+div.container div.title{
+    font-size: 30px;
+    text-align: center;
+    background-color: #6A5495;
+    display: block;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1.3rem;
+}
+
+div.container div.title h1{ 
+    font-size: 26px;
+}
+
+
+div.container form .box1{
+    font-size: 18px;
+    text-align: left;
+    align-items: left;
+    display: block;
+    padding: 0.2rem;
+}
+
+div.container form input{
+    font-size: 14px;
+    font-weight: 100;
+    display: block;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+    padding: 0.3rem;
+    border: solid 2px #f0f0f0;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+}
+
+div.container form .btn{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-top: 1rem;
+    opacity: 0.9;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    width: 60%;
+    background-color: #0069d9;
+    border:  solid 1.5px #f0f0f0;
+}
+
+.form-field.error input{
+    background-color: rgba(163, 53, 53, 0.8);
+}
+
+.form-field.success input{
+    background-color: rgba(58, 177, 48, 0.8);
+}
+
+span{
+    color: rgb(223, 204, 204);
+    font-size: 14px;
+}
+
